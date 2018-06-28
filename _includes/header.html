@@ -1,0 +1,71 @@
+<header>
+  <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
+    <div class="container-fluid main-navbar">
+      <div class="navbar-header">
+        <button type="button" class="base-navbar navbar-toggle">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/">
+          Russell Kan
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          {% for link in site.includes.navigation %}
+            <li>
+              {% if link.children %}
+                <button type="button" class="subnav-toggle navbar-toggle">
+                  <i class="fa fa-caret-right"></i>
+                </button>
+              {% endif %}
+              <a href="{{ site.baseurl }}{{ link.href }}">
+                {{ link.title }}
+              </a>
+              {% if link.children %}
+                <div class="collapse navbar-collapse navbar-right subnav">
+                  <ul class="nav navbar-nav subnav-nav">
+                    {% for child in link.children %}
+                      <li>
+                        <a href="{{ site.baseurl }}{{ child.href }}">
+                          {{ child.title }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    {% for link in site.includes.navigation %}
+      {% if page.url contains link.href and link.children %}
+        <div class="container-fluid sub-navbar">
+          <div class="navbar-header">
+            <a class="subnav-brand page-scroll" href="/">
+              {{ link.title }}
+            </a>
+          </div>
+
+          <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+              {% for child in link.children %}
+                <li>
+                  <a href="{{ site.baseurl }}{{ child.href }}">
+                    {{ child.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </nav>
+  <script src="/js/navbar.js"></script>
+</header>
