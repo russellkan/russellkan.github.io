@@ -1,6 +1,4 @@
 @duration: 1s;
-@primary: #F04F22;  // orange
-@secondary: #2D4087; // dark blue
 @dark: #000;
 @light: #fff;
 @lightest: lighten(@light, 50%);
@@ -31,18 +29,17 @@
     opacity:0;
     animation: stagger-in @duration @duration*2 ease forwards;
     &:nth-child(2) {
-      animation: stagger-in @duration/2 @duration*2+.8s ease forwards;
+      animation: stagger-in @duration/2 @duration*2+.5s ease forwards;
     }
     &:nth-child(3) {
-      animation: stagger-in @duration/2 @duration*2+1.8s ease forwards;
+      animation: stagger-in @duration/2 @duration*2+1s ease forwards;
     }
     &:nth-child(4) {
-      animation: stagger-in @duration/2 @duration*2+2.8s ease forwards;
+      animation: stagger-in @duration/2 @duration*2+1.5s ease forwards;
     }
   }
 
 }
-
 
 @keyframes definition-slide-here {
   0% {
@@ -78,11 +75,11 @@
 }
 
 .visit {
-  margin: 100px auto 0 auto;
-  text-align: center;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  margin-left: -110px;
 }
-
-//Don't look at this
 
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -1606,7 +1603,14 @@ img.lazy.scroll-watch-in-view {
 }
 
 .site {
-  position: relative
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column
+}
+
+.site-content {
+  flex: 1
 }
 
 .site:after {
@@ -1628,12 +1632,6 @@ img.lazy.scroll-watch-in-view {
   transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1), visibility 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   will-change: opacity;
   z-index: 4000
-}
-
-@media (min-width: 40em) {
-  .site {
-    padding-right: 80px
-  }
 }
 
 .site-main {
@@ -3576,7 +3574,8 @@ body.proj-menu-open .site-header {
 }
 
 .definition dl {
-  margin: 0 auto
+  text-align: center;
+  margin-top: 20%
 }
 
 .definition dl::after {
@@ -3591,7 +3590,7 @@ body.proj-menu-open .site-header {
   margin-bottom: 1.5rem;
   opacity: 0;
   overflow-y: hidden;
-  position: relative
+  position: relative;
 }
 
 @media all and (min-width: 48em) {
@@ -3647,7 +3646,7 @@ body.proj-menu-open .site-header {
   transform: scale(0)
 }
 
-@media (min-width: 40em) {
+@media (min-width: @viewport-md) {
   .definition dl dt {
     float: left;
     width: 50%
@@ -3661,16 +3660,10 @@ body.proj-menu-open .site-header {
   text-indent: -18px
 }
 
-@media (min-width: 40em) {
+@media (min-width: @viewport-md) {
   .definition dl dd {
     margin-left: 50%;
     width: 50%
-  }
-}
-
-@media (max-width: 40em) {
-  .definition dl {
-    max-width: 300px
   }
 }
 
@@ -4967,7 +4960,6 @@ body.proj-menu-open .site-header {
   z-index: 0
 }
 
-
 @media (min-width: 48em) {
   .location-image {
     opacity: 0;
@@ -4986,7 +4978,6 @@ body.proj-menu-open .site-header {
 }
 
 /*# sourceMappingURL=styles.css.map */
-
 
 .reveal-text,
 .reveal-text::after {
@@ -5009,10 +5000,9 @@ body.proj-menu-open .site-header {
   user-select: none;
   -webkit-animation-name: reveal-text;
   animation-name: reveal-text;
-  color: #222;
+  color: skyblue;
   white-space: nowrap;
   cursor: default
-
 }
 
 .reveal-text::after {
@@ -5023,7 +5013,7 @@ body.proj-menu-open .site-header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #222;
+  background-color: skyblue;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -5032,7 +5022,6 @@ body.proj-menu-open .site-header {
   -webkit-animation-name: revealer-text;
   animation-name: revealer-text;
 }
-
 
 @-webkit-keyframes reveal-text {
   from {
@@ -5045,7 +5034,6 @@ body.proj-menu-open .site-header {
   }
 }
 
-
 @keyframes reveal-text {
   from {
     -webkit-clip-path: inset(0 100% 0 0);
@@ -5056,7 +5044,6 @@ body.proj-menu-open .site-header {
     clip-path: inset(0 0 0 0);
   }
 }
-
 
 @-webkit-keyframes revealer-text {
 
@@ -5070,8 +5057,7 @@ body.proj-menu-open .site-header {
     transform-origin: 100% 50%;
   }
 
-
-  60% {
+    60% {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
@@ -5081,7 +5067,6 @@ body.proj-menu-open .site-header {
     transform: scaleX(0);
   }
 }
-
 
 @keyframes revealer-text {
 
@@ -5095,8 +5080,7 @@ body.proj-menu-open .site-header {
     transform-origin: 100% 50%;
   }
 
-
-  60% {
+    60% {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
@@ -5108,14 +5092,13 @@ body.proj-menu-open .site-header {
 }
 
 .b-button {
-  //background: 4px solid white;
-  border: 1px solid #222;
+  border: 1px;
+  background-color: skyblue;
   display: inline-block;
   height: var(--button-height);
   overflow: hidden;
   padding: 10px 40px;
   position: relative;
-  bottom: 20vh;
 }
 
 .b-button,
@@ -5126,16 +5109,38 @@ svg {
 }
 
 .b-button a {
-  color: #fff;
+  color: blue;
   transition:all .15s ease-in-out;
 }
 
 .b-button:hover {
+  background-color: blue;
   a {
-    color: #222;
+    color: white;
   }
 }
 
 body * {
   -webkit-overflow-scrolling: touch;
+}
+
+.homepage {
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: stretch;
+  color: blue
+}
+
+.center {
+  a i {
+    width: 100%;
+    text-align: center
+  }
+
+  a:hover {
+    color: #0077B5
+  }
 }
