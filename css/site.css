@@ -4573,12 +4573,19 @@ svg {
   height: stretch;
   color: blue;
 }
+.center {
+  display: inline-flex;
+}
 .center a i {
   width: 100%;
   text-align: center;
+  font-size: 24px;
 }
 .center a:hover {
   color: #0077B5;
+}
+footer {
+  text-align: center;
 }
 body * {
   -webkit-overflow-scrolling: touch;
