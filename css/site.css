@@ -4564,9 +4564,6 @@ svg {
 .b-button:hover a {
   color: white;
 }
-body * {
-  -webkit-overflow-scrolling: touch;
-}
 .homepage {
   background-image: url('/images/background.jpg');
   background-size: cover;
@@ -4582,4 +4579,7 @@ body * {
 }
 .center a:hover {
   color: #0077B5;
+}
+body * {
+  -webkit-overflow-scrolling: touch;
 }
