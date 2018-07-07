@@ -5116,6 +5116,8 @@ body.proj-menu-open .site-header {
   overflow: hidden;
   padding: 10px 40px;
   position: relative;
+  color: blue;
+  transition:all .15s ease-in-out;
 }
 
 .b-button,
@@ -5125,16 +5127,9 @@ svg {
   text-transform: uppercase;
 }
 
-.b-button a {
-  color: blue;
-  transition:all .15s ease-in-out;
-}
-
 .b-button:hover {
   background-color: blue;
-  a {
-    color: white;
-  }
+  color: white;
 }
 
 .homepage {
@@ -5209,6 +5204,27 @@ footer {
 .text-box {
   padding: 1vw;
   background-color: rgba(135, 206, 250, .6);
+}
+
+.copy-notif {
+  background-color: @text-color;
+  text-align: center;
+  color: white;
+}
+
+.fade-in {
+  animation: stagger-in @duration ease forwards;
+}
+
+.hidden {
+  visibility: hidden;
+  animation: fade-out @duration ease-out forwards;
+  transition: visibility 0s @duration;
+}
+
+@keyframes fade-out {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
 
 body * {

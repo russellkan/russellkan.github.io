@@ -22,13 +22,37 @@ title: Russell Kan
                 </dl>
             </div>
             <div class="visit">
-                <button class="reveal-text b-button js-button">
-                    <a href="mailto:txrjk96@utexas.edu">
+                <div class="copy-notif hidden">
+                    Email copied to clipboard
+                </div>
+                <button class="reveal-text b-button" onclick="copyEmail('txrjk96@utexas.edu')">
                     contact
-                    </a>
                 </button>
             </div>
         </main>
         {% include footer.html %}
+        <script>
+            function copyEmail(str) {
+                copyToClipboard(str);
+                el = document.getElementsByClassName('copy-notif');
+                el[0].classList.toggle('hidden');
+                el[0].classList.toggle('fade-in');
+                setTimeout(function(){
+                    el[0].classList.toggle('fade-in');
+                    el[0].classList.toggle('hidden');
+                }, 2000);
+            }
+            function copyToClipboard(str) {
+              const el = document.createElement('textarea');
+              el.value = str;
+              el.setAttribute('readonly', '');
+              el.style.position = 'absolute';
+              el.style.left = '-9999px';
+              document.body.appendChild(el);
+              el.select();
+              document.execCommand('copy');
+              document.body.removeChild(el);
+            };
+        </script>
     </body>
 </html>
