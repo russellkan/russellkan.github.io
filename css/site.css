@@ -60,7 +60,7 @@
 }
 .visit {
   position: absolute;
-  bottom: 100px;
+  bottom: 80px;
   left: 50%;
   margin-left: -110px;
 }
@@ -965,6 +965,10 @@ html {
 }
 body {
   margin: 0;
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 *,
 *::before,
@@ -3234,6 +3238,7 @@ button.white:hover {
 .definition dl {
   text-align: center;
   margin-top: 20%;
+  color: blue;
 }
 .definition dl::after {
   clear: both;
@@ -3248,14 +3253,21 @@ button.white:hover {
   overflow-y: hidden;
   position: relative;
 }
+.definition dl dt a {
+  color: blue;
+}
+.definition dl dt a:hover {
+  color: darkviolet;
+}
+.definition dd a {
+  color: blue;
+}
+.definition dd a:hover {
+  color: darkviolet;
+}
 @media all and (min-width: 48em) {
   .definition dl dt {
-    font-size: 3.05175781rem;
-  }
-}
-@media all and (min-width: 75em) {
-  .definition dl dt {
-    font-size: 3.05175781rem;
+    font-size: 48px;
   }
 }
 .definition dl dt span:nth-child(3) {
@@ -3303,7 +3315,7 @@ button.white:hover {
 .definition dl dd {
   margin: 0;
   opacity: 0;
-  padding: .75rem 0 .75rem 20px;
+  padding: .75rem 0;
   text-indent: -18px;
 }
 @media (min-width: 768px) {
@@ -4565,27 +4577,47 @@ svg {
   color: white;
 }
 .homepage {
-  background-image: url('/images/background.jpg');
-  background-size: cover;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: stretch;
-  color: blue;
+  background-image: url('/images/back_home.jpg');
 }
-.center {
+.about {
+  background-image: url('/images/back_about.png');
+  font-family: "Palatino Linotype", Palatino, serif;
+  color: midnightblue;
+  font-weight: bold;
+}
+.about .post-title {
+  margin-top: 20vh;
+}
+.link-icon {
   display: inline-flex;
 }
-.center a i {
+.link-icon a i {
   width: 100%;
   text-align: center;
   font-size: 24px;
+  color: blue;
+  margin: 0px 2px;
 }
-.center a:hover {
+.link-icon a i:hover {
+  color: darkviolet;
+}
+.link-icon .fa-linkedin-square:hover {
   color: #0077B5;
+}
+.link-icon .fa-github:hover {
+  color: black;
+}
+.link-icon .fa-instagram:hover {
+  color: darkred;
 }
 footer {
   text-align: center;
+}
+.center {
+  width: 45vw;
+  padding: 5vw;
+  text-align: left;
+  display: table-cell;
 }
 body * {
   -webkit-overflow-scrolling: touch;

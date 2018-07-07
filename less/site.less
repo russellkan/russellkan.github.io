@@ -5,6 +5,9 @@
 @viewport-sm: 767px;
 @viewport-md: 768px;
 @viewport-lg: 992px;
+@text-color: blue;
+@text-color-hover: darkviolet;
+@linkedin-blue: #0077B5;
 
 .definition {
   dt {
@@ -76,7 +79,7 @@
 
 .visit {
   position: absolute;
-  bottom: 100px;
+  bottom: 80px;
   left: 50%;
   margin-left: -110px;
 }
@@ -1064,7 +1067,11 @@ html {
 }
 
 body {
-  margin: 0
+  margin: 0;
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 *, *::before, *::after {
@@ -3569,19 +3576,20 @@ body.proj-menu-open .site-header {
     display: block;
     opacity: 0;
     -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   }
 }
 
 .definition dl {
   text-align: center;
-  margin-top: 20%
+  margin-top: 20%;
+  color: blue;
 }
 
 .definition dl::after {
   clear: both;
   content: "";
-  display: block
+  display: block;
 }
 
 .definition dl dt {
@@ -3591,17 +3599,26 @@ body.proj-menu-open .site-header {
   opacity: 0;
   overflow-y: hidden;
   position: relative;
+  a {
+    color: @text-color;
+  }
+  a:hover{
+    color: @text-color-hover;
+  }
+}
+
+.definition dd {
+  a {
+    color: @text-color;
+  }
+  a:hover {
+    color: @text-color-hover;
+  }
 }
 
 @media all and (min-width: 48em) {
   .definition dl dt {
-    font-size: 3.0517578125rem
-  }
-}
-
-@media all and (min-width: 75em) {
-  .definition dl dt {
-    font-size: 3.0517578125rem
+    font-size: 48px
   }
 }
 
@@ -3656,7 +3673,7 @@ body.proj-menu-open .site-header {
 .definition dl dd {
   margin: 0;
   opacity: 0;
-  padding: .75rem 0 .75rem 20px;
+  padding: .75rem 0;
   text-indent: -18px
 }
 
@@ -5121,31 +5138,51 @@ svg {
 }
 
 .homepage {
-  background-image: url('/images/background.jpg');
-  background-size: cover;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: stretch;
-  color: blue
+  background-image: url('/images/back_home.jpg');
 }
 
-.center {
-  display: inline-flex;
+.about {
+  background-image: url('/images/back_about.png');
+  font-family: "Palatino Linotype", Palatino, serif;
+  color: midnightblue;
+  font-weight: bold;
+  .post-title {
+    margin-top: 20vh;
+  }
+}
 
+.link-icon {
+  display: inline-flex;
   a i {
     width: 100%;
     text-align: center;
-    font-size: 24px
+    font-size: 24px;
+    color: @text-color;
+    margin: 0px 2px;
   }
-
-  a:hover {
-    color: #0077B5
+  a i:hover {
+    color: @text-color-hover;
+  }
+  .fa-linkedin-square:hover {
+    color: @linkedin-blue;
+  }
+  .fa-github:hover {
+    color: black;
+  }
+  .fa-instagram:hover {
+    color: darkred;
   }
 }
 
 footer {
   text-align: center;
+}
+
+.center {
+  width: 45vw;
+  padding: 5vw;
+  text-align: left;
+  display:table-cell;
 }
 
 body * {
