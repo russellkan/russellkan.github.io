@@ -4645,6 +4645,9 @@ footer {
 .fade-in {
   animation: stagger-in 1s ease forwards;
 }
+.hidden-first {
+  visibility: hidden;
+}
 .hidden {
   visibility: hidden;
   animation: fade-out 1s ease-out forwards;
