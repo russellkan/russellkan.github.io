@@ -4585,9 +4585,6 @@ svg {
   color: midnightblue;
   font-weight: bold;
 }
-.about .post-title {
-  margin-top: 20vh;
-}
 .link-icon {
   display: inline-flex;
 }
@@ -4613,11 +4610,35 @@ svg {
 footer {
   text-align: center;
 }
+.center-parent {
+  display: inline-flex;
+  height: 90vh;
+  align-items: center;
+}
 .center {
-  width: 45vw;
-  padding: 5vw;
+  width: 50vw;
+  padding: 4vw;
   text-align: left;
-  display: table-cell;
+}
+@media screen and (max-width: 767px) {
+  .center {
+    transform: translateY(25%);
+  }
+  .center p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-height: 640px) {
+  .post-title {
+    margin-bottom: 0px;
+  }
+  .center p {
+    font-size: 11px;
+  }
+}
+.text-box {
+  padding: 1vw;
+  background-color: rgba(135, 206, 250, 0.6);
 }
 body * {
   -webkit-overflow-scrolling: touch;
