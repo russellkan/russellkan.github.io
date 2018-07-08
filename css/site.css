@@ -3238,12 +3238,14 @@ button.white:hover {
 .definition dl {
   text-align: center;
   margin-top: 20%;
-  color: blue;
 }
 .definition dl::after {
   clear: both;
   content: "";
   display: block;
+}
+.definition dl a {
+  color: blue;
 }
 .definition dl dt {
   font-size: 3.0517578125rem;
@@ -3253,16 +3255,8 @@ button.white:hover {
   overflow-y: hidden;
   position: relative;
 }
-.definition dl dt a {
-  color: blue;
-  background-color: rgba(146, 221, 217, 0.6);
-}
 .definition dl dt a:hover {
   color: darkviolet;
-}
-.definition dd a {
-  color: blue;
-  background-color: rgba(146, 221, 217, 0.6);
 }
 .definition dd a:hover {
   color: darkviolet;
@@ -4626,6 +4620,13 @@ footer {
   }
   .center p {
     font-size: 12px;
+  }
+  .homepage {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%), url('/images/back_home.jpg');
+  }
+  .definition a {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0px 2px;
   }
 }
 @media screen and (max-height: 640px) {

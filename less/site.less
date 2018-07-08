@@ -3584,7 +3584,6 @@ body.proj-menu-open .site-header {
 .definition dl {
   text-align: center;
   margin-top: 20%;
-  color: blue;
 }
 
 .definition dl::after {
@@ -3593,30 +3592,25 @@ body.proj-menu-open .site-header {
   display: block;
 }
 
-.definition dl dt {
-  font-size: 3.0517578125rem;
-  line-height: 1.125;
-  margin-bottom: 1.5rem;
-  opacity: 0;
-  overflow-y: hidden;
-  position: relative;
+.definition dl {
   a {
     color: @text-color;
-    background-color: @tzuyu-background-color;
   }
-  a:hover{
-    color: @text-color-hover;
+  dt {
+    font-size: 3.0517578125rem;
+    line-height: 1.125;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    overflow-y: hidden;
+    position: relative;
+    a:hover{
+      color: @text-color-hover;
+    }
   }
 }
 
-.definition dd {
-  a {
-    color: @text-color;
-    background-color: @tzuyu-background-color;
-  }
-  a:hover {
-    color: @text-color-hover;
-  }
+.definition dd a:hover {
+  color: @text-color-hover;
 }
 
 @media all and (min-width: 48em) {
@@ -5192,6 +5186,16 @@ footer {
     transform: translateY(25%);
     p {
       font-size: 12px;
+    }
+  }
+  .homepage {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.0) 100%), url('/images/back_home.jpg');
+  }
+
+  .definition {
+    a {
+      background-color: rgba(255, 255, 255, .6);
+      padding: 0px 2px;
     }
   }
 }
