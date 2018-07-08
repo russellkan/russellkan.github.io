@@ -3255,12 +3255,14 @@ button.white:hover {
 }
 .definition dl dt a {
   color: blue;
+  background-color: rgba(146, 221, 217, 0.6);
 }
 .definition dl dt a:hover {
   color: darkviolet;
 }
 .definition dd a {
   color: blue;
+  background-color: rgba(146, 221, 217, 0.6);
 }
 .definition dd a:hover {
   color: darkviolet;
@@ -3278,7 +3280,8 @@ button.white:hover {
 .definition dl dt .pronunciation {
   font-size: 1rem;
   line-height: 1.5;
-  display: block;
+  display: table;
+  margin: auto;
   font-family: "leitura-news", "Georgia", "Times New Roman", serif;
   -webkit-transform: translate(-75%);
   transform: translate(-75%);

@@ -8,6 +8,7 @@
 @text-color: blue;
 @text-color-hover: darkviolet;
 @linkedin-blue: #0077B5;
+@tzuyu-background-color: rgba(146, 221, 217, .6);
 
 .definition {
   dt {
@@ -3601,6 +3602,7 @@ body.proj-menu-open .site-header {
   position: relative;
   a {
     color: @text-color;
+    background-color: @tzuyu-background-color;
   }
   a:hover{
     color: @text-color-hover;
@@ -3610,6 +3612,7 @@ body.proj-menu-open .site-header {
 .definition dd {
   a {
     color: @text-color;
+    background-color: @tzuyu-background-color;
   }
   a:hover {
     color: @text-color-hover;
@@ -3631,7 +3634,8 @@ body.proj-menu-open .site-header {
 .definition dl dt .pronunciation {
   font-size: 1rem;
   line-height: 1.5;
-  display: block;
+  display: table;
+  margin: auto;
   font-family: "leitura-news", "Georgia", "Times New Roman", serif;
   -webkit-transform: translate(-75%);
   transform: translate(-75%)
