@@ -5,44 +5,29 @@
 @viewport-sm: 767px;
 @viewport-md: 768px;
 @viewport-lg: 992px;
-@text-color: blue;
-@text-color-hover: darkviolet;
+@text-color: darkviolet;
+@text-color-hover: deepskyblue;
 @linkedin-blue: #0077B5;
-@tzuyu-background-color: rgba(146, 221, 217, .6);
+@lighter-skyblue: #DFFFFF;
 
 .definition {
   dt {
     opacity:0;
     overflow-y: hidden;
     animation: stagger-in @duration @duration ease forwards;
-    .bullet {
-      transform: scale(0);
-      animation: definition-appear @duration/3 @duration*2.5 cubic-bezier(0.26, 0.15, 0.43, 1.42) forwards;
-    }
-    span:nth-child(3) {
-      position: absolute;
-      transform: translate(-10px);
-      animation: definition-slide-here @duration/2 @duration*2.2 ease forwards;
-    }
-    .pronunciation {
-      transform: translate(-75%);
-      animation: definition-slide @duration @duration+(@duration/2) ease forwards;
-    }
   }
   dd {
     opacity:0;
-    animation: stagger-in @duration @duration*2 ease forwards;
     &:nth-child(2) {
-      animation: stagger-in @duration/2 @duration*2+.5s ease forwards;
+      animation: stagger-in @duration/2 @duration+.5s ease forwards;
     }
     &:nth-child(3) {
-      animation: stagger-in @duration/2 @duration*2+1s ease forwards;
+      animation: stagger-in @duration/2 @duration+1s ease forwards;
     }
     &:nth-child(4) {
-      animation: stagger-in @duration/2 @duration*2+1.5s ease forwards;
+      animation: stagger-in @duration/2 @duration+1.5s ease forwards;
     }
   }
-
 }
 
 @keyframes definition-slide-here {
@@ -3615,7 +3600,7 @@ body.proj-menu-open .site-header {
 
 @media all and (min-width: 48em) {
   .definition dl dt {
-    font-size: 48px
+    font-size: 60px
   }
 }
 
@@ -3631,19 +3616,17 @@ body.proj-menu-open .site-header {
   display: table;
   margin: auto;
   font-family: "leitura-news", "Georgia", "Times New Roman", serif;
-  -webkit-transform: translate(-75%);
-  transform: translate(-75%)
 }
 
 @media all and (min-width: 48em) {
   .definition dl dt .pronunciation {
-    font-size: 1.25rem
+    font-size: 1.5rem;
   }
 }
 
 .definition dl dt .pronunciation strong {
   font-family: "Maison Neue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .definition dl dt .bullet {
@@ -3658,13 +3641,13 @@ body.proj-menu-open .site-header {
   margin: 0 -8px;
   vertical-align: middle;
   -webkit-transform: scale(0);
-  transform: scale(0)
+  transform: scale(0);
 }
 
 @media (min-width: @viewport-md) {
   .definition dl dt {
     float: left;
-    width: 50%
+    width: 50%;
   }
 }
 
@@ -3672,13 +3655,14 @@ body.proj-menu-open .site-header {
   margin: 0;
   opacity: 0;
   padding: .75rem 0;
-  text-indent: -18px
+  text-indent: -18px;
 }
 
 @media (min-width: @viewport-md) {
   .definition dl dd {
     margin-left: 50%;
-    width: 50%
+    width: 50%;
+    font-size: 1.25rem;
   }
 }
 
@@ -4996,12 +4980,12 @@ body.proj-menu-open .site-header {
 
 .reveal-text,
 .reveal-text::after {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: @duration*3;
+  animation-delay: @duration*3;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  -webkit-animation-duration: 800ms;
-  animation-duration: 800ms;
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
@@ -5028,7 +5012,7 @@ body.proj-menu-open .site-header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: skyblue;
+  background-color: orchid;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -5108,13 +5092,13 @@ body.proj-menu-open .site-header {
 
 .b-button {
   border: 1px;
-  background-color: skyblue;
+  background-color: rgba(135, 206, 235, 0);
   display: inline-block;
   height: var(--button-height);
   overflow: hidden;
   padding: 10px 40px;
   position: relative;
-  color: blue;
+  color: @text-color;
   transition:all .15s ease-in-out;
 }
 
@@ -5126,12 +5110,8 @@ svg {
 }
 
 .b-button:hover {
-  background-color: blue;
+  background-color: @text-color;
   color: white;
-}
-
-.homepage {
-  background-image: url('/images/back_home.jpg');
 }
 
 .about {
@@ -5188,16 +5168,6 @@ footer {
       font-size: 12px;
     }
   }
-  .homepage {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.0) 100%), url('/images/back_home.jpg');
-  }
-
-  .definition {
-    a {
-      background-color: rgba(255, 255, 255, .6);
-      padding: 0px 2px;
-    }
-  }
 }
 
 @media screen and (max-height: 640px) {
@@ -5224,6 +5194,11 @@ footer {
   animation: stagger-in @duration ease forwards;
 }
 
+.fade-in-footer {
+  opacity: 0;
+  animation: stagger-in @duration @duration*3.75 ease forwards;
+}
+
 .hidden-first {
   visibility: hidden;
 }
@@ -5237,6 +5212,19 @@ footer {
 @keyframes fade-out {
     from {opacity: 1;}
     to {opacity: 0;}
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: @light;
+  z-index: -1;
+  /* Only when using an image:
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;*/
 }
 
 body * {
