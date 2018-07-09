@@ -5,10 +5,11 @@
 @viewport-sm: 767px;
 @viewport-md: 768px;
 @viewport-lg: 992px;
-@text-color: darkviolet;
-@text-color-hover: deepskyblue;
+@text-color: #7232f2;
+@text-color-hover: #af65ff;
 @linkedin-blue: #0077B5;
 @lighter-skyblue: #DFFFFF;
+@particle-lines-purple: #7232f2;
 
 .definition {
   dt {
@@ -5012,7 +5013,6 @@ body.proj-menu-open .site-header {
   user-select: none;
   -webkit-animation-name: reveal-text;
   animation-name: reveal-text;
-  color: skyblue;
   white-space: nowrap;
   cursor: default
 }
@@ -5025,7 +5025,7 @@ body.proj-menu-open .site-header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: orchid;
+  background-color: @text-color;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -5198,9 +5198,8 @@ footer {
 }
 
 .copy-notif {
-  background-color: @text-color;
   text-align: center;
-  color: white;
+  color: @text-color;
 }
 
 .fade-in {
@@ -5231,7 +5230,7 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: @light;
+  background-color: @dark;
   z-index: -1;
   /* Only when using an image:
   background-image: url('');
