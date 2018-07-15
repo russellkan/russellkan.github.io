@@ -5209,7 +5209,7 @@ footer {
 
 .fade-in-footer {
   opacity: 0;
-  animation: stagger-in @duration @duration*4.25 ease forwards;
+  animation: stagger-in @duration ease forwards;
 }
 
 .hidden-first {
@@ -5238,6 +5238,10 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;*/
+}
+
+.home footer .fade-in-footer {
+  animation-delay: @duration*4.25;
 }
 
 body * {

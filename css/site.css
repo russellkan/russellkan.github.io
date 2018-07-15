@@ -4636,7 +4636,7 @@ footer {
 }
 .fade-in-footer {
   opacity: 0;
-  animation: stagger-in 1s 4.25s ease forwards;
+  animation: stagger-in 1s ease forwards;
 }
 .hidden-first {
   visibility: hidden;
@@ -4665,6 +4665,9 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;*/
+}
+.home footer .fade-in-footer {
+  animation-delay: 4.25s;
 }
 body * {
   -webkit-overflow-scrolling: touch;
