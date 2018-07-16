@@ -1606,7 +1606,6 @@ img.lazy.scroll-watch-in-view {
 .container {
   margin: 0 auto;
   max-width: 90em;
-  width: 100%;
 }
 .container::after {
   clear: both;
@@ -1616,7 +1615,6 @@ img.lazy.scroll-watch-in-view {
 .container-fluid {
   margin: 0 auto;
   max-width: 112.5em;
-  padding: 0px;
 }
 .container-fluid::after {
   clear: both;
@@ -2967,6 +2965,11 @@ button.white:hover {
     -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   }
+}
+.definition {
+  width: 100%;
+  max-width: none;
+  margin: 0px;
 }
 .definition dl {
   text-align: center;

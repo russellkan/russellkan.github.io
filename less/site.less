@@ -1733,8 +1733,7 @@ img.lazy.scroll-watch-in-view {
 
 .container {
   margin: 0 auto;
-  max-width: 90em;
-  width: 100%
+  max-width: 90em
 }
 
 .container::after {
@@ -1745,8 +1744,7 @@ img.lazy.scroll-watch-in-view {
 
 .container-fluid {
   margin: 0 auto;
-  max-width: 112.5em;
-  padding: 0px
+  max-width: 112.5em
 }
 
 .container-fluid::after {
@@ -3264,9 +3262,14 @@ body.menu-open {
   }
 }
 
-.definition dl {
-  text-align: center;
-  margin-top: 20%;
+.definition {
+  width: 100%;
+  max-width: none;
+  margin: 0px;
+  dl {
+    text-align: center;
+    margin-top: 20%;
+  }
 }
 
 .definition dl::after {
