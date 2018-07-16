@@ -14,17 +14,26 @@
 
       <div class="collapse navbar-collapse navbar-right">
         <ul class="nav navbar-nav">
-          {% for link in site.includes.navigation %}
+          {% for link in site.data.navigation %}
             <li>
               {% if link.children %}
                 <button type="button" class="subnav-toggle navbar-toggle">
                   <i class="fa fa-caret-right"></i>
                 </button>
-              {% endif %}
-              <a href="{{ site.baseurl }}{{ link.href }}">
-                {{ link.title }}
-              </a>
-              {% if link.children %}
+                <a class="dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl }}{{ link.href }}">
+                  {{ link.title }}
+                </a>
+                {% unless page.url contains link.href %}
+                  <ul class="dropdown-menu dropdown-custom navbar-custom sub-navbar">
+                    {% for child in link.children reversed %}
+                      <li>
+                        <a href="{{ site.baseurl }}{{ child.href }}">
+                          {{ child.title }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endunless %}
                 <div class="collapse navbar-collapse navbar-right subnav">
                   <ul class="nav navbar-nav subnav-nav">
                     {% for child in link.children %}
@@ -36,6 +45,10 @@
                     {% endfor %}
                   </ul>
                 </div>
+              {% else %}
+                <a href="{{ site.baseurl }}{{ link.href }}">
+                  {{ link.title }}
+                </a>
               {% endif %}
             </li>
           {% endfor %}
@@ -43,15 +56,9 @@
       </div>
     </div>
 
-    {% for link in site.includes.navigation %}
+    {% for link in site.data.navigation %}
       {% if page.url contains link.href and link.children %}
         <div class="container-fluid sub-navbar">
-          <div class="navbar-header">
-            <a class="subnav-brand page-scroll" href="/">
-              {{ link.title }}
-            </a>
-          </div>
-
           <div class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
               {% for child in link.children %}
