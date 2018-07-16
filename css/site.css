@@ -1526,9 +1526,9 @@ img.lazy.scroll-watch-in-view {
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 0;
   height: 100vh;
   width: 100%;
-  opacity: 0;
   visibility: hidden;
   background-color: #161616;
   -webkit-backface-visibility: hidden;
@@ -4636,7 +4636,7 @@ footer {
 }
 .fade-in-footer {
   opacity: 0;
-  animation: stagger-in 1s ease forwards;
+  animation: stagger-in 1s 0.1s ease forwards;
 }
 .hidden-first {
   visibility: hidden;
@@ -4668,6 +4668,143 @@ footer {
 }
 .home footer .fade-in-footer {
   animation-delay: 4.25s;
+}
+.navbar-custom {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: darkskyblue;
+  border-bottom: 0;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+}
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+  outline: none;
+}
+.navbar-custom a {
+  color: #fff;
+}
+.navbar-custom .nav li.active {
+  outline: nonte;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.navbar-custom .nav li a {
+  transition: background 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a.active {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.navbar-custom .sub-navbar {
+  background-color: skyblue;
+  text-transform: none;
+  top: auto;
+}
+.navbar-custom .sub-navbar ul {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.navbar-custom .sub-navbar ul li a {
+  padding: 10px;
+}
+@media (min-width: 992px) {
+  .navbar {
+    padding: 10px 0;
+    letter-spacing: 1px;
+    background: transparent;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .top-nav-collapse {
+    padding: 0;
+    background-color: darkskyblue;
+  }
+}
+@media (max-width: viewport-sm) {
+  .navbar {
+    display: table;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .subnav {
+    padding: 0px;
+    border-top-width: 0;
+    text-transform: none;
+    background-color: skyblue;
+  }
+  .subnav-toggle {
+    margin: 0px 15px 0px 0px;
+    padding: 6.5px 15px;
+    z-index: 1;
+    color: #fff;
+  }
+  .subnav-nav {
+    margin: 0px;
+  }
+  .subnav-nav li a {
+    font-size: 14px;
+    padding: 10px 5px 10px 25px;
+  }
+  .sub-navbar {
+    display: none;
+  }
+  .navbar-nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .subnav ul {
+    display: none;
+    list-style-type: none;
+  }
+}
+.fa-caret-right.active {
+  transform: rotate(90deg);
+  transition: transform .3s linear;
+}
+.fa-caret-right:not(.active) {
+  transition: transform .3s linear;
+}
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-custom {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0s;
+    transition-delay: 0s;
+  }
+}
+.dropdown-custom {
+  width: 100%;
+  display: block;
+  position: fixed;
+  border: 0px;
+  padding: 0px;
+  padding-right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .25s .5s;
+}
+.dropdown-custom li {
+  float: right;
+}
+.dropdown-custom li a {
+  padding: 10px;
+  color: #fff;
+}
+.dropdown-custom li a:hover {
+  color: #fff;
 }
 body * {
   -webkit-overflow-scrolling: touch;
