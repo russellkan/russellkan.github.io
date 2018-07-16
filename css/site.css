@@ -1606,6 +1606,7 @@ img.lazy.scroll-watch-in-view {
 .container {
   margin: 0 auto;
   max-width: 90em;
+  width: 100%;
 }
 .container::after {
   clear: both;
@@ -1615,6 +1616,7 @@ img.lazy.scroll-watch-in-view {
 .container-fluid {
   margin: 0 auto;
   max-width: 112.5em;
+  padding: 0px;
 }
 .container-fluid::after {
   clear: both;
@@ -2987,6 +2989,7 @@ button.white:hover {
 }
 .definition dl dt a:hover {
   color: #af65ff;
+  text-decoration: none;
 }
 .definition dd a:hover {
   color: #af65ff;

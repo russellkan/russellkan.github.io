@@ -2,7 +2,6 @@
     // adapted from: https://mpetroff.net/2015/03/bootstrap-navbar-without-jquery/
 
     var toggles = document.getElementsByClassName('navbar-toggle');
-    var subnavIndex = 2;
 
     [].forEach.call(toggles, function(navbar) {
         if (navbar.classList.contains("base-navbar")) {
@@ -11,8 +10,9 @@
             }, false);
         } else {
             navbar.addEventListener('click', function() {
+                children = this.parentNode.children
                 toggleSubNavbar(
-                    this.parentNode.children[subnavIndex],
+                    children[children.length-1],
                     this.firstElementChild
                 );
             }, false);

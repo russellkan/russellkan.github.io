@@ -1733,7 +1733,8 @@ img.lazy.scroll-watch-in-view {
 
 .container {
   margin: 0 auto;
-  max-width: 90em
+  max-width: 90em;
+  width: 100%
 }
 
 .container::after {
@@ -1744,7 +1745,8 @@ img.lazy.scroll-watch-in-view {
 
 .container-fluid {
   margin: 0 auto;
-  max-width: 112.5em
+  max-width: 112.5em;
+  padding: 0px
 }
 
 .container-fluid::after {
@@ -3285,6 +3287,7 @@ body.menu-open {
     position: relative;
     a:hover{
       color: @text-color-hover;
+      text-decoration: none;
     }
   }
 }
