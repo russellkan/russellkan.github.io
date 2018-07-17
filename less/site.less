@@ -3282,22 +3282,17 @@ body.menu-open {
   a {
     color: @text-color;
   }
+  a:hover, a:focus, a:active {
+    color: @text-color-hover;
+    text-decoration: none;
+  }
   dt {
     font-size: 3.0517578125rem;
     line-height: 1.125;
     margin-bottom: 1.5rem;
     overflow-y: hidden;
     position: relative;
-    a:hover, a:active {
-      color: @text-color-hover;
-      text-decoration: none;
-    }
   }
-}
-
-.definition dd a:hover, a:active {
-  color: @text-color-hover;
-  text-decoration: none;
 }
 
 @media all and (min-width: 48em) {

@@ -2983,22 +2983,18 @@ button.white:hover {
 .definition dl a {
   color: #7232f2;
 }
+.definition dl a:hover,
+.definition dl a:focus,
+.definition dl a:active {
+  color: #af65ff;
+  text-decoration: none;
+}
 .definition dl dt {
   font-size: 3.0517578125rem;
   line-height: 1.125;
   margin-bottom: 1.5rem;
   overflow-y: hidden;
   position: relative;
-}
-.definition dl dt a:hover,
-.definition dl dt a:active {
-  color: #af65ff;
-  text-decoration: none;
-}
-.definition dd a:hover,
-a:active {
-  color: #af65ff;
-  text-decoration: none;
 }
 @media all and (min-width: 48em) {
   .definition dl dt {
