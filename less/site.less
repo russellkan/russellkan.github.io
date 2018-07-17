@@ -3288,15 +3288,16 @@ body.menu-open {
     margin-bottom: 1.5rem;
     overflow-y: hidden;
     position: relative;
-    a:hover{
+    a:hover, a:active {
       color: @text-color-hover;
       text-decoration: none;
     }
   }
 }
 
-.definition dd a:hover {
+.definition dd a:hover, a:active {
   color: @text-color-hover;
+  text-decoration: none;
 }
 
 @media all and (min-width: 48em) {

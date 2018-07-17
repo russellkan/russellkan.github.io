@@ -2990,12 +2990,15 @@ button.white:hover {
   overflow-y: hidden;
   position: relative;
 }
-.definition dl dt a:hover {
+.definition dl dt a:hover,
+.definition dl dt a:active {
   color: #af65ff;
   text-decoration: none;
 }
-.definition dd a:hover {
+.definition dd a:hover,
+a:active {
   color: #af65ff;
+  text-decoration: none;
 }
 @media all and (min-width: 48em) {
   .definition dl dt {
