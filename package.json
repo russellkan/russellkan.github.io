@@ -1,0 +1,32 @@
+{
+  "name": "innolitics.github.io",
+  "version": "1.0.0",
+  "description": "See makefile for how to setup dev environment and how to run a testserver.",
+  "main": "index.js",
+  "dependencies": {
+    "clean-css": "^3.4.11",
+    "imagemin-cli": "^3.0.0",
+    "imagemin-pngquant": "^5.0.0",
+    "imagemin-svgo": "^5.2.1",
+    "less": "^2.6.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "clean-css": "^3.4.18",
+    "less": "^2.7.1",
+    "postcss-cli": "^2.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/innolitics/innolitics.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/innolitics/innolitics.github.io/issues"
+  },
+  "homepage": "https://github.com/innolitics/innolitics.github.io#readme"
+}

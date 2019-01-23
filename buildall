@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+node --version | grep -qE '[7-9].' || { echo "Need Node v7.x or higher" && exit 1; }
+ruby --version | grep -q 'ruby 2.' || { echo "Need Ruby v2.x" && exit 1; }
+
+gem install bundler
+bundle install
+npm install
+make
