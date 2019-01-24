@@ -9,8 +9,8 @@ description: a brief autobiography
   <head>
     {% include head.html %}
   </head>
-  <button class="fa fa-arrow-left back-button" onclick="goBack()">
-    back
+  <button class="fa fa-arrow-left back-button" onclick="window.location.href='{{ site.url }}'">
+    home
   </button>
   <body class="site about">
     <main class="site-content">
@@ -29,10 +29,5 @@ description: a brief autobiography
       </div>
     </main>
     {% include footer.html %}
-    <script>
-      function goBack() {
-        window.history.back();
-      }
-    </script>
   </body>
 </html>

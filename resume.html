@@ -9,8 +9,8 @@ description: a more personal cv
   <head>
     {% include head.html %}
   </head>
-  <button class="fa fa-arrow-left back-button" onclick="goBack()">
-    back
+  <button class="fa fa-arrow-left back-button" onclick="window.location.href='{{ site.url }}'">
+    home
   </button>
   <body class="site resume">
     <main class="site-content">
@@ -273,10 +273,5 @@ description: a more personal cv
         </row>
       </div>
     </main>
-    <script>
-      function goBack() {
-        window.history.back();
-      }
-    </script>
   </body>
 </html>
