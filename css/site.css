@@ -4356,7 +4356,7 @@ footer {
   }
 }
 .text-box {
-  padding: 1vw;
+  padding: 1rem;
   max-width: 960px;
 }
 .copy-notif {
@@ -4561,6 +4561,9 @@ footer {
 .resume .container strong {
   font-size: 20px;
 }
+.resume .container .detail strong {
+  font-size: 16px;
+}
 .resume .title {
   margin-top: 0px;
   padding-bottom: 20px;
@@ -4583,14 +4586,20 @@ footer {
   font-size: 5rem;
   background-color: rgba(222, 234, 240, 0.5);
 }
+.resume .front h3 {
+  margin-bottom: 0px;
+}
 .resume .findme {
   color: midnightblue;
   font-size: 36px;
 }
 @media (max-width: 767px) {
   .resume .container {
-    padding: 60px 20px;
+    padding: 40px 20px;
     min-width: 180px;
+  }
+  .resume .container .row p {
+    margin-bottom: 0px;
   }
   .resume .front {
     margin-left: 20%;
@@ -4639,4 +4648,12 @@ footer {
 }
 body * {
   -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+.resume-row {
+  margin-bottom: 1.5rem;
 }

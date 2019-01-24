@@ -4872,7 +4872,7 @@ footer {
 }
 
 .text-box {
-  padding: 1vw;
+  padding: 1rem;
   max-width: 960px;
 }
 
@@ -5103,6 +5103,9 @@ footer {
       font-size: 20px;
     }
     padding: 40px 180px;
+    .detail strong {
+      font-size: 16px;
+    }
   }
   .title {
     margin-top: 0px;
@@ -5125,6 +5128,9 @@ footer {
       font-size: 5rem;
       background-color: rgba(222, 234, 240, 0.5);
     }
+    h3 {
+      margin-bottom: 0px;
+    }
   }
   .findme {
     color: midnightblue;
@@ -5135,8 +5141,11 @@ footer {
 @media(max-width: @viewport-sm) {
   .resume {
     .container {
-      padding: 60px 20px;
+      padding: 40px 20px;
       min-width: 180px;
+      .row p {
+        margin-bottom: 0px;
+      }
     }
     .front {
       margin-left: 20%;
@@ -5198,4 +5207,14 @@ footer {
 
 body * {
   -webkit-overflow-scrolling: touch;
+}
+
+@media(max-width: @viewport-sm) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+.resume-row {
+  margin-bottom: 1.5rem;
 }
