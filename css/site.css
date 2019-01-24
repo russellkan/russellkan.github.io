@@ -4619,7 +4619,7 @@ footer {
 }
 .back-button {
   font-size: 14px !important;
-  position: absolute !important;
+  position: fixed !important;
   background-color: rgba(255, 255, 255, 0.3);
   color: white;
   border: none;
