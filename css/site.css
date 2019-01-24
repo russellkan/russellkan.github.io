@@ -4581,7 +4581,7 @@ footer {
 .resume .front .text-box {
   margin-top: 35vh;
   font-size: 5rem;
-  background-color: rgba(135, 206, 250, 0.8);
+  background-color: rgba(222, 234, 240, 0.5);
 }
 .resume .findme {
   color: midnightblue;
@@ -4599,14 +4599,17 @@ footer {
 .background-white {
   background-color: white;
 }
-.background-lightblue {
-  background-color: lightblue;
+.background-ocean {
+  background-color: #abd2d9;
 }
-.background-lighterskyblue {
-  background-color: #dfffff;
+.background-lightsky {
+  background-color: #deeaf0;
 }
-.background-dimgrey {
-  background-color: dimgrey;
+.background-sand {
+  background-color: #eae4dc;
+}
+.background-whitewater {
+  background-color: #f0efea;
 }
 .skill-name {
   font-size: 20px;
