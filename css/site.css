@@ -4558,6 +4558,12 @@ footer {
 .resume .container strong {
   font-size: 20px;
 }
+.resume .title {
+  margin-top: 0px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(25, 25, 112, 0.75);
+}
 .resume .front {
   width: fit-content;
   padding: 0px;
@@ -4568,12 +4574,6 @@ footer {
   margin-top: 35vh;
   font-size: 5rem;
   background-color: rgba(135, 206, 250, 0.6);
-}
-.resume .front .text-box .title {
-  margin-top: 0px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid;
-  border-bottom-color: rgba(25, 25, 112, 0.75);
 }
 .resume .front .text-box .subtitle {
   font-size: 2rem;
