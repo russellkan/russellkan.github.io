@@ -2971,10 +2971,6 @@ button.white:hover {
   max-width: none;
   margin: 0px;
 }
-.definition dl {
-  text-align: center;
-  margin-top: 20%;
-}
 .definition dl::after {
   clear: both;
   content: "";
@@ -4295,15 +4291,19 @@ svg {
   font-size: 20px;
   font-weight: bold;
 }
+.about .text-box {
+  background-color: rgba(135, 206, 250, 0.6);
+}
 .link-icon {
   display: inline-flex;
 }
+.link-icon a {
+  margin: 0px 2px;
+}
 .link-icon a i {
-  width: 100%;
   text-align: center;
   font-size: 24px;
   color: #7232f2;
-  margin: 0px 2px;
 }
 .link-icon a i:hover {
   color: #af65ff;
@@ -4311,11 +4311,14 @@ svg {
 .link-icon .fa-linkedin-square:hover {
   color: #0077b5;
 }
-.link-icon .fa-github:hover {
+.link-icon .fa-github-square:hover {
   color: white;
 }
 .link-icon .fa-instagram:hover {
   color: #e1306c;
+}
+.link-icon .fa-facebook-square:hover {
+  color: #3b5998;
 }
 footer {
   text-align: center;
@@ -4351,7 +4354,7 @@ footer {
 }
 .text-box {
   padding: 1vw;
-  background-color: rgba(135, 206, 250, 0.6);
+  max-width: 960px;
 }
 .copy-notif {
   text-align: center;
@@ -4531,6 +4534,85 @@ footer {
 }
 .dropdown-custom li a:hover {
   color: #fff;
+}
+.title {
+  text-align: center;
+  margin-top: 20%;
+}
+.resume {
+  background: transparent no-repeat fixed center url('/images/back_resume.jpg');
+  background-size: cover;
+  color: midnightblue;
+  font-family: PT Sans, Open Sans, sans-serif;
+}
+.resume a {
+  color: midnightblue;
+}
+.resume .container {
+  padding: 40px 180px;
+}
+.resume .container h2 {
+  text-align: center;
+  font-weight: bold;
+}
+.resume .container strong {
+  font-size: 20px;
+}
+.resume .front {
+  width: fit-content;
+  padding: 0px;
+  margin-left: 60%;
+  font-weight: bold;
+}
+.resume .front .text-box {
+  margin-top: 35vh;
+  font-size: 5rem;
+  background-color: rgba(135, 206, 250, 0.6);
+}
+.resume .front .text-box .title {
+  margin-top: 0px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(25, 25, 112, 0.75);
+}
+.resume .front .text-box .subtitle {
+  font-size: 2rem;
+  padding-top: 0px;
+  text-align: center;
+}
+.resume .findme {
+  color: midnightblue;
+  font-size: 44px;
+}
+@media (max-width: 767px) {
+  .resume .container {
+    padding: 60px 20px;
+    min-width: 180px;
+  }
+  .resume .front {
+    margin-left: 20%;
+  }
+}
+.background-white {
+  background-color: white;
+}
+.background-lightblue {
+  background-color: lightblue;
+}
+.background-dimgrey {
+  background-color: dimgrey;
+}
+.skill-name {
+  font-size: 20px;
+}
+.skill-level {
+  float: right;
+}
+.padless-list {
+  padding: 0px;
+}
+.no-bullets {
+  list-style-type: none;
 }
 body * {
   -webkit-overflow-scrolling: touch;

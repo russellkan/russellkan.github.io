@@ -9,6 +9,7 @@
 @text-color-hover: #af65ff;
 @linkedin-blue: #0077b5;
 @instagram-red: #e1306c;
+@facebook-blue: #3b5998;
 @lighter-skyblue: #dfffff;
 @particle-lines-purple: #7232f2;
 
@@ -3266,10 +3267,6 @@ body.menu-open {
   width: 100%;
   max-width: none;
   margin: 0px;
-  dl {
-    text-align: center;
-    margin-top: 20%;
-  }
 }
 
 .definition dl::after {
@@ -4801,16 +4798,20 @@ svg {
   font-family: 'Shadows Into Light Two', Tahoma, sans-serif;
   font-size: 20px;
   font-weight: bold;
+  .text-box {
+    background-color: rgba(135, 206, 250, .6);
+  }
 }
 
 .link-icon {
   display: inline-flex;
+  a {
+    margin: 0px 2px;
+  }
   a i {
-    width: 100%;
     text-align: center;
     font-size: 24px;
     color: @text-color;
-    margin: 0px 2px;
   }
   a i:hover {
     color: @text-color-hover;
@@ -4818,11 +4819,14 @@ svg {
   .fa-linkedin-square:hover {
     color: @linkedin-blue;
   }
-  .fa-github:hover {
+  .fa-github-square:hover {
     color: white;
   }
   .fa-instagram:hover {
     color: @instagram-red;
+  }
+  .fa-facebook-square:hover {
+    color: @facebook-blue;
   }
 }
 
@@ -4865,7 +4869,7 @@ footer {
 
 .text-box {
   padding: 1vw;
-  background-color: rgba(135, 206, 250, .6);
+  max-width: 960px;
 }
 
 .copy-notif {
@@ -5071,6 +5075,97 @@ footer {
             color: @light;
         }
     }
+}
+
+.title {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.resume {
+  background: transparent no-repeat fixed center url('/images/back_resume.jpg');
+  background-size: cover;
+  color: midnightblue;
+  font-family: PT Sans, Open Sans, sans-serif;
+  a {
+    color: midnightblue;
+  }
+  .container{
+    h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+    strong {
+      font-size: 20px;
+    }
+    padding: 40px 180px;
+  }
+  .front {
+    width: fit-content;
+    padding: 0px;
+    margin-left: 60%;
+    font-weight: bold;
+    .text-box {
+      margin-top: 35vh;
+      font-size: 5rem;
+      background-color: rgba(135, 206, 250, .6);
+      .title {
+        margin-top: 0px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid;
+        border-bottom-color: rgba(25, 25, 112, 0.75);
+      }
+      .subtitle {
+        font-size: 2rem;
+        padding-top: 0px;
+        text-align: center;
+      }
+    }
+  }
+  .findme {
+    color: midnightblue;
+    font-size: 44px;
+  }
+}
+
+@media(max-width: @viewport-sm) {
+  .resume {
+    .container {
+      padding: 60px 20px;
+      min-width: 180px;
+    }
+    .front {
+      margin-left: 20%;
+    }
+  }
+}
+
+.background-white {
+  background-color: white;
+}
+
+.background-lightblue {
+  background-color: lightblue;
+}
+
+.background-dimgrey {
+  background-color: dimgrey;
+}
+
+.skill-name {
+  font-size: 20px;
+}
+
+.skill-level {
+  float:right;
+}
+
+.padless-list {
+  padding: 0px;
+}
+
+.no-bullets {
+  list-style-type: none;
 }
 
 body * {
