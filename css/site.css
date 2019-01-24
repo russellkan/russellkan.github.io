@@ -4611,6 +4611,9 @@ footer {
 .skill-level {
   float: right;
 }
+.skill-level i {
+  vertical-align: -webkit-baseline-middle;
+}
 .padless-list {
   padding: 0px;
 }
