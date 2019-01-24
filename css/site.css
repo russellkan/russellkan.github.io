@@ -4561,6 +4561,9 @@ footer {
 .resume .container strong {
   font-size: 20px;
 }
+.resume .container .detail p {
+  margin-top: 10px;
+}
 .resume .container .detail strong {
   font-size: 16px;
 }
