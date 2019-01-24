@@ -4287,12 +4287,15 @@ svg {
 .about {
   background-image: url('/images/back_about.jpg');
   color: midnightblue;
-  font-family: 'Shadows Into Light Two', Tahoma, sans-serif;
+  font-family: 'PT Sans', Open Sans, sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
 .about .text-box {
-  background-color: rgba(135, 206, 250, 0.6);
+  background-color: rgba(135, 206, 250, 0.8);
+}
+.home .link-icon a i {
+  color: #7232f2;
 }
 .link-icon {
   display: inline-flex;
@@ -4303,7 +4306,7 @@ svg {
 .link-icon a i {
   text-align: center;
   font-size: 24px;
-  color: #7232f2;
+  color: midnightblue;
 }
 .link-icon a i:hover {
   color: #af65ff;
@@ -4562,7 +4565,12 @@ footer {
   margin-top: 0px;
   padding-bottom: 20px;
   border-bottom: 1px solid;
-  border-bottom-color: rgba(25, 25, 112, 0.75);
+  border-bottom-color: rgba(25, 25, 112, 0.8);
+}
+.resume .subtitle {
+  font-size: 2rem;
+  padding-top: 0px;
+  text-align: center;
 }
 .resume .front {
   width: fit-content;
@@ -4573,16 +4581,11 @@ footer {
 .resume .front .text-box {
   margin-top: 35vh;
   font-size: 5rem;
-  background-color: rgba(135, 206, 250, 0.6);
-}
-.resume .front .text-box .subtitle {
-  font-size: 2rem;
-  padding-top: 0px;
-  text-align: center;
+  background-color: rgba(135, 206, 250, 0.8);
 }
 .resume .findme {
   color: midnightblue;
-  font-size: 44px;
+  font-size: 36px;
 }
 @media (max-width: 767px) {
   .resume .container {
@@ -4613,6 +4616,17 @@ footer {
 }
 .no-bullets {
   list-style-type: none;
+}
+.back-button {
+  font-size: 14px !important;
+  position: absolute !important;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: none;
+}
+.back-button:hover {
+  background-color: black;
+  color: white;
 }
 body * {
   -webkit-overflow-scrolling: touch;
