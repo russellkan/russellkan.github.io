@@ -37,3 +37,9 @@ defaults:
             type: "posts"
         values:
             layout: "basic"
+    -
+        scope:
+            path: "music"
+            type: "posts"
+        values:
+            layout: "basic"
