@@ -1107,7 +1107,7 @@ html {
 }
 body {
   color: #161616;
-  font-family: "Maison Neue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: Open Sans, PT Sans, sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.5;
@@ -1294,7 +1294,6 @@ p {
     font-size: 1.953125rem;
   }
 }
-.section-title,
 .post-content .content-title-wrap p {
   font-size: .8em;
   font-weight: 400;
@@ -4287,7 +4286,7 @@ svg {
 .about {
   background-image: url('/images/back_about.jpg');
   color: midnightblue;
-  font-family: 'PT Sans', Open Sans, sans-serif;
+  font-family: PT Sans, Open Sans, sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
@@ -4405,7 +4404,7 @@ footer {
   margin-bottom: 0;
   text-transform: uppercase;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: #444;
   border-bottom: 0;
 }
 .navbar-custom .navbar-brand {
@@ -4423,11 +4422,11 @@ footer {
   outline: none;
 }
 .navbar-custom a {
-  color: #fff;
+  color: white;
 }
 .navbar-custom .nav li.active {
   outline: nonte;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .navbar-custom .nav li a {
   transition: background 0.3s ease-in-out;
@@ -4436,10 +4435,10 @@ footer {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
   outline: none;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .navbar-custom .sub-navbar {
-  background-color: skyblue;
+  background-color: #483475;
   text-transform: none;
   top: auto;
 }
@@ -4459,7 +4458,7 @@ footer {
   }
   .top-nav-collapse {
     padding: 0;
-    background-color: black;
+    background-color: #444;
   }
 }
 @media (max-width: viewport-sm) {
@@ -4623,6 +4622,10 @@ footer {
 .background-whitewater {
   background-color: #f0efea;
 }
+.background-black {
+  background-color: black;
+  color: white;
+}
 .skill-name {
   font-size: 20px;
 }
@@ -4659,4 +4662,41 @@ body * {
 }
 .resume-row {
   margin-bottom: 1.5rem;
+}
+.content-area {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+.post-title {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-family: PT Sans, Open Sans, sans-serif;
+  font-size: 32px;
+  color: white;
+}
+.post-title a {
+  color: white;
+}
+.post-title a:hover {
+  color: #d7ecf5;
+  text-decoration: none !important;
+}
+.post-date {
+  color: #aaa;
+}
+.section-title {
+  padding: 100px 0px;
+}
+.section-title h1 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.post-entry {
+  margin-bottom: 50px;
+  background-color: #111;
+}
+.post-description {
+  padding: 10px 20px;
+  margin: 0;
 }

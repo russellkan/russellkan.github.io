@@ -29,3 +29,11 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+permalink: "/:categories/:title/"
+defaults:
+    -
+        scope:
+            path: "med"
+            type: "posts"
+        values:
+            layout: "basic"

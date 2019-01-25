@@ -12,6 +12,7 @@
 @facebook-blue: #3b5998;
 @lighter-skyblue: #dfffff;
 @particle-lines-purple: #7232f2;
+@purple-night: #483475;
 
 .definition {
   dt {
@@ -1160,7 +1161,7 @@ html {
 
 body {
   color: #161616;
-  font-family: "Maison Neue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: Open Sans, PT Sans, sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.5
@@ -1378,7 +1379,7 @@ p {
   }
 }
 
-.section-title, .post-content .content-title-wrap p {
+.post-content .content-title-wrap p {
   font-size: .8em;
   font-weight: 400;
   letter-spacing: 3px;
@@ -4795,7 +4796,7 @@ svg {
 .about {
   background-image: url('/images/back_about.jpg');
   color: midnightblue;
-  font-family: 'PT Sans', Open Sans, sans-serif;
+  font-family: PT Sans, Open Sans, sans-serif;
   font-size: 20px;
   font-weight: bold;
   .text-box {
@@ -4926,7 +4927,7 @@ footer {
     margin-bottom: 0;
     text-transform: uppercase;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: black;
+    background-color: #444;
     border-bottom: 0;
 
     .navbar-brand {
@@ -4944,13 +4945,13 @@ footer {
         }
     }
     a {
-        color: @light;
+        color: white;
     }
     .nav {
         li {
             &.active {
                 outline: nonte;
-                background-color: fade(@light, 30%);
+                background-color: fade(@dark, 20%);
             }
             a {
                 transition: background .3s ease-in-out;
@@ -4958,14 +4959,14 @@ footer {
                 &:focus,
                 &.active {
                     outline: none;
-                    background-color: fade(@light, 30%);
+                    background-color: fade(@dark, 20%);
                 }
             }
         }
     }
 
     .sub-navbar {
-        background-color: skyblue;
+        background-color: @purple-night;
         text-transform: none;
         top: auto;
         ul {
@@ -4988,7 +4989,7 @@ footer {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: black;
+        background-color: #444;
     }
 }
 
@@ -5178,6 +5179,11 @@ footer {
   background-color: #f0efea;
 }
 
+.background-black {
+  background-color: black;
+  color: white;
+}
+
 .skill-name {
   font-size: 20px;
 }
@@ -5222,4 +5228,47 @@ body * {
 
 .resume-row {
   margin-bottom: 1.5rem;
+}
+
+.content-area {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.post-title {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-family: PT Sans, Open Sans, sans-serif;
+  font-size: 32px;
+  color: white;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: #d7ecf5;
+    text-decoration: none !important;
+  }
+}
+
+.post-date {
+  color: #aaa;
+}
+
+.section-title {
+  padding: 100px 0px;
+  h1 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+}
+
+.post-entry {
+  margin-bottom: 50px;
+  background-color: #111;
+}
+
+.post-description {
+  padding: 10px 20px;
+  margin: 0;
 }
