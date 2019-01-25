@@ -4326,7 +4326,6 @@ footer {
   text-align: center;
   position: absolute;
   width: 100%;
-  bottom: 0;
 }
 .center-parent {
   display: inline-flex;
@@ -4399,6 +4398,7 @@ footer {
 }
 .home footer .fade-in-footer {
   animation-delay: 4.25s;
+  bottom: 0;
 }
 .navbar-custom {
   margin-bottom: 0;
@@ -4699,4 +4699,7 @@ body * {
 .post-description {
   padding: 10px 20px;
   margin: 0;
+}
+.post-video {
+  padding: 10px 20px;
 }

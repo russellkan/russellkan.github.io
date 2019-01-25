@@ -13,15 +13,13 @@ layout: "basic"
       {% for post in site.categories['music'] %}
       <li class="post-entry">
         <div class="text-center">
-          <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+          <h1 class="post-title"><a href="{{ post.source-url }}">{{ post.title }}</a></h1>
           <em class="post-date">
             {{ post.date | date: "%-d %B %Y" }}
           </em>
         </div>
         <br>
-        <p class="post-description">
-        {{ post.description }}
-        </p>
+        <iframe class="post-video" width="800px" height="480px" src="{{ post.source-url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </li>
       {% endfor %}
     </ul>
