@@ -4631,6 +4631,12 @@ footer {
   background-color: rgba(150, 150, 150, 0.3);
   color: white;
   border: none;
+  padding: 15px 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.back-button .button-text {
+  font-family: PT Sans, Open Sans, sans-serif;
 }
 .back-button:hover {
   background-color: black;
