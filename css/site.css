@@ -4329,7 +4329,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .center {
-    transform: translateY(25%);
+    transform: translateY(10%);
   }
   .center p {
     font-size: 12px;
