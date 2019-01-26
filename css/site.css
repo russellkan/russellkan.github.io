@@ -54,12 +54,7 @@
   margin-left: -100px;
 }
 .visit button {
-  font-size: .8em;
-  font-weight: 400;
   letter-spacing: 3px;
-  text-transform: uppercase;
-  border: 1px solid;
-  padding: 15px 30px;
   width: 200px;
 }
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
