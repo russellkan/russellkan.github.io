@@ -54,6 +54,12 @@
   margin-left: -100px;
 }
 .visit button {
+  font-size: .8em;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 15px 30px;
   width: 200px;
 }
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -2134,14 +2140,7 @@ body.menu-open {
 .btn,
 input[type="submit"],
 button {
-  font-size: .8em;
-  font-weight: 400;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  border: 1px solid;
   display: inline-block;
-  height: 3rem;
-  padding: 15px 30px;
   -webkit-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -2150,12 +2149,6 @@ input[type="submit"],
 button {
   background-color: #161616;
   color: #fff;
-}
-.btn:hover,
-input[type="submit"]:hover,
-button:hover {
-  background-color: #fff;
-  color: #161616;
 }
 .btn.white,
 input.white[type="submit"],
@@ -4425,17 +4418,17 @@ footer {
   color: white;
 }
 .navbar-custom .nav li.active {
-  outline: nonte;
-  background-color: rgba(0, 0, 0, 0.2);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .navbar-custom .nav li a {
   transition: background 0.3s ease-in-out;
 }
-.navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:hover,
 .navbar-custom .nav li a.active {
   outline: none;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .navbar-custom .sub-navbar {
   background-color: #483475;
@@ -4448,6 +4441,12 @@ footer {
 }
 .navbar-custom .sub-navbar ul li a {
   padding: 10px;
+}
+.navbar-custom button {
+  transition: background 0.3s ease-in-out;
+}
+.navbar-custom button:active {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 992px) {
   .navbar {
@@ -4472,11 +4471,12 @@ footer {
     padding: 0px;
     border-top-width: 0;
     text-transform: none;
-    background-color: skyblue;
+    background-color: #483475;
   }
   .subnav-toggle {
-    margin: 0px 15px 0px 0px;
-    padding: 6.5px 15px;
+    margin: 3px 15px 3px 0px;
+    font-size: 16px;
+    padding: 4px 13px;
     z-index: 1;
     color: #fff;
   }
@@ -4596,18 +4596,6 @@ footer {
   color: midnightblue;
   font-size: 36px;
 }
-@media (max-width: 767px) {
-  .resume .container {
-    padding: 40px 20px;
-    min-width: 180px;
-  }
-  .resume .container .row p {
-    margin-bottom: 0px;
-  }
-  .resume .front {
-    margin-left: 20%;
-  }
-}
 .background-white {
   background-color: white;
 }
@@ -4656,11 +4644,6 @@ footer {
 body * {
   -webkit-overflow-scrolling: touch;
 }
-@media (max-width: 767px) {
-  .hide-mobile {
-    display: none !important;
-  }
-}
 .resume-row {
   margin-bottom: 1.5rem;
 }
@@ -4703,4 +4686,25 @@ body * {
 }
 .post-video {
   padding: 10px 20px;
+}
+@media (max-width: 767px) {
+  .resume .container {
+    padding: 40px 20px;
+    min-width: 180px;
+  }
+  .resume .container .row p {
+    margin-bottom: 0px;
+  }
+  .resume .front {
+    margin-left: 20%;
+  }
+  .hide-mobile {
+    display: none !important;
+  }
+  .section-title {
+    padding: 50px 0;
+  }
+  .youtube {
+    height: 100%;
+  }
 }
