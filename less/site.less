@@ -74,7 +74,10 @@
   position: absolute;
   bottom: 80px;
   left: 50%;
-  margin-left: -108px;
+  margin-left: -100px;
+  button {
+    width: 200px;
+  }
 }
 
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -4775,7 +4778,7 @@ body.menu-open {
   display: inline-block;
   height: var(--button-height);
   overflow: hidden;
-  padding: 10px 40px;
+  padding: 10px 20px;
   position: relative;
   color: @text-color;
   transition:all .15s ease-in-out;
@@ -4837,7 +4840,6 @@ svg {
 
 footer {
   text-align: center;
-  width: 100%;
 }
 
 .center-parent {
@@ -4917,10 +4919,10 @@ footer {
   background-position: 50% 50%;*/
 }
 
-.home footer .fade-in-footer {
-  animation-delay: @duration*4.25;
-  bottom: 0;
-  position: absolute;
+.home footer {
+  .fade-in-footer {
+    animation-delay: @duration*4.25;
+  }
 }
 
 .navbar-custom {
@@ -5083,6 +5085,7 @@ footer {
 }
 
 .title {
+  font-family: PT Sans, Open Sans, sans-serif;
   text-align: center;
   margin-top: 20%;
 }

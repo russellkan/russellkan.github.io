@@ -51,7 +51,10 @@
   position: absolute;
   bottom: 80px;
   left: 50%;
-  margin-left: -108px;
+  margin-left: -100px;
+}
+.visit button {
+  width: 200px;
 }
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -4268,7 +4271,7 @@ button.white:hover {
   display: inline-block;
   height: var(--button-height);
   overflow: hidden;
-  padding: 10px 40px;
+  padding: 10px 20px;
   position: relative;
   color: #7232f2;
   transition: all 0.15s ease-in-out;
@@ -4324,7 +4327,6 @@ svg {
 }
 footer {
   text-align: center;
-  width: 100%;
 }
 .center-parent {
   display: inline-flex;
@@ -4397,8 +4399,6 @@ footer {
 }
 .home footer .fade-in-footer {
   animation-delay: 4.25s;
-  bottom: 0;
-  position: absolute;
 }
 .navbar-custom {
   margin-bottom: 0;
@@ -4538,6 +4538,7 @@ footer {
   color: #fff;
 }
 .title {
+  font-family: PT Sans, Open Sans, sans-serif;
   text-align: center;
   margin-top: 20%;
 }
