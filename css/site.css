@@ -4324,7 +4324,6 @@ svg {
 }
 footer {
   text-align: center;
-  position: absolute;
   width: 100%;
 }
 .center-parent {
@@ -4399,6 +4398,7 @@ footer {
 .home footer .fade-in-footer {
   animation-delay: 4.25s;
   bottom: 0;
+  position: absolute;
 }
 .navbar-custom {
   margin-bottom: 0;
@@ -4682,7 +4682,7 @@ body * {
   color: #d7ecf5;
   text-decoration: none !important;
 }
-.post-date {
+.post-info {
   color: #aaa;
 }
 .section-title {
