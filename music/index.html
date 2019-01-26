@@ -20,7 +20,7 @@ layout: "basic"
         {% if post.site == "Youtube" %}
         <iframe class="post-video" width="800px" height="480px" src="https://www.youtube.com/embed/{{ post.source }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         {% elsif post.site == "Soundcloud" %}
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ post.source }}"></iframe>
+        <iframe class="post-video" width="800px" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ post.source }}"></iframe>
         {% endif %}
       </li>
       {% endfor %}
