@@ -57,6 +57,9 @@
   letter-spacing: 3px;
   width: 200px;
 }
+main {
+  overflow-y: auto;
+}
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -1617,7 +1620,6 @@ img.lazy.scroll-watch-in-view {
 }
 .container-fluid {
   margin: 0 auto;
-  max-width: 112.5em;
 }
 .container-fluid::after {
   clear: both;
