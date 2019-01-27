@@ -31,15 +31,21 @@ plugins:
   - jekyll-feed
 permalink: "/:categories/:title/"
 defaults:
-    -
-        scope:
-            path: "med"
-            type: "posts"
-        values:
-            layout: "basic"
-    -
-        scope:
-            path: "music"
-            type: "posts"
-        values:
-            layout: "basic"
+  -
+    scope:
+        path: "blog"
+        type: "posts"
+    values:
+        layout: "article"
+  -
+    scope:
+        path: "med"
+        type: "posts"
+    values:
+        layout: "article"
+  -
+    scope:
+      path: "music"
+      type: "posts"
+    values:
+      layout: "basic"

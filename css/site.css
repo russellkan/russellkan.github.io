@@ -3633,7 +3633,8 @@ button.white:hover {
   }
 }
 .post-content {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
+  padding: 10px 20px;
 }
 .post-content .callout {
   margin-bottom: 3rem;
@@ -3643,7 +3644,7 @@ button.white:hover {
 .post-content .content-title-wrap {
   margin-left: auto;
   margin-right: auto;
-  max-width: 40em;
+  max-width: 45em;
 }
 .post-content .content-title-wrap {
   margin-top: 3rem;
@@ -4652,7 +4653,7 @@ body * {
 }
 .content-area {
   width: 80%;
-  max-width: 800px;
+  max-width: 50em;
   margin: auto;
 }
 .post-header {
@@ -4676,6 +4677,7 @@ body * {
 }
 .section-title {
   padding: 100px 0px;
+  text-align: center;
 }
 .section-title h1 {
   letter-spacing: 4px;
@@ -4688,9 +4690,6 @@ body * {
 .post-description {
   padding: 10px 20px;
   margin: 0;
-}
-.post-video {
-  padding: 10px 20px;
 }
 .post-video.bandcamp {
   text-align: center;
@@ -4710,11 +4709,17 @@ body * {
   .resume .front {
     margin-left: 20%;
   }
+  .hide-desktop {
+    display: block !important;
+  }
   .hide-mobile {
     display: none !important;
   }
   .section-title {
     padding: 50px 0;
+  }
+  .section-title h1 {
+    font-size: 2rem;
   }
   .youtube {
     height: 100%;
@@ -4725,4 +4730,26 @@ body * {
   .post-info {
     font-size: 14px;
   }
+}
+.hide-desktop {
+  display: none;
+}
+.readable-content {
+  max-width: 45em;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.post-content h1 {
+  font-size: 3.5rem;
+}
+.post-content h2 {
+  font-size: 3rem;
+}
+.post-content h3 {
+  font-size: 2.5rem;
+}
+.post-content h4 {
+  font-size: 2rem;
 }

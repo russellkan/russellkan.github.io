@@ -16,11 +16,11 @@ layout: "basic"
           <h1 class="post-title"><a href="{{ post.source-url }}">{{ post.title }}</a></h1>
           <em class="post-info">{{ post.artist }}</em>
         </div>
-        <div>
+        <div class="post-content">
           {% if post.site == "Youtube" %}
-          <iframe class="post-video youtube" width="100%" height="480" src="https://www.youtube.com/embed/{{ post.source }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="post-video youtube" width="100%" height="396" src="https://www.youtube.com/embed/{{ post.source }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           {% elsif post.site == "Soundcloud" %}
-          <iframe class="post-video" width="100%" height="146" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ post.source }}"></iframe>
+          <iframe class="post-video" width="100%" height="126" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ post.source }}"></iframe>
           {% elsif post.site == "Bandcamp" %}
           <div class="post-video bandcamp">
             <iframe width="100%" height="42" src="https://bandcamp.com/EmbeddedPlayer/album={{ post.album }}/size=small/bgcol=333333/linkcol=ffffff/track={{ post.track }}/transparent=true/" seamless></iframe>

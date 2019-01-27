@@ -1,0 +1,27 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+
+<body class="background-black">
+  {% include header.html %}
+  <main>
+    <div class="content-area readable-area">
+      <div class="section-title">
+        <h1>{{ page.title }}</h1>
+        <em>
+          {{ page.date | date: "%-d %B %Y" }} 
+        </em>
+      </div>
+      <div class="post-content post-entry">
+      <br>
+        {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
+  </main>
+</body>
+</html>

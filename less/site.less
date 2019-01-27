@@ -4042,7 +4042,8 @@ body.menu-open {
 }
 
 .post-content {
-  margin-bottom: 6rem
+  margin-bottom: 3rem;
+  padding: 10px 20px;
 }
 
 .post-content .callout {
@@ -4053,7 +4054,7 @@ body.menu-open {
 .post-content p, .post-content .content-title-wrap {
   margin-left: auto;
   margin-right: auto;
-  max-width: 40em
+  max-width: 45em;
 }
 
 .post-content .content-title-wrap {
@@ -5219,7 +5220,7 @@ body * {
 
 .content-area {
   width: 80%;
-  max-width: 800px;
+  max-width: 50em;
   margin: auto;
 }
 
@@ -5247,6 +5248,7 @@ body * {
 
 .section-title {
   padding: 100px 0px;
+  text-align: center;
   h1 {
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -5264,7 +5266,6 @@ body * {
 }
 
 .post-video {
-  padding: 10px 20px;
   &.bandcamp {
     text-align: center;
     iframe {
@@ -5287,11 +5288,17 @@ body * {
       margin-left: 20%;
     }
   }
+  .hide-desktop {
+    display: block !important;
+  }
   .hide-mobile {
     display: none !important;
   }
   .section-title {
     padding: 50px 0;
+    h1 {
+      font-size: 2rem;
+    }
   }
   .youtube {
     height: 100%;
@@ -5301,5 +5308,32 @@ body * {
   }
   .post-info {
     font-size: 14px;
+  }
+}
+
+.hide-desktop {
+  display: none;
+}
+
+.readable-content {
+    max-width: 45em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.post-content {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2rem;
   }
 }
