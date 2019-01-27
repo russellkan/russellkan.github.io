@@ -1,26 +1,22 @@
 ---
 title: "basically webmd"
 description: "i'm the illest"
-layout: "basic"
+layout: "basic_index"
 ---
-<div class="container">
-  <div class="content-area">
-    <div class="text-center section-title">
-      <h1>Medical Science</h1>
-      <p class="content-type-overview">{{ page.description }}</p>
-    </div>
-    <ul class="list-unstyled">
-      {% for post in site.categories['med'] %}
-      <li class="post-entry">
-        <div class="text-center post-header">
-          <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-          <em class="post-info">{{ post.date | date: "%-d %B %Y" }}</em>
-        </div>
-        <p class="post-description">
-        {{ post.description }}
-        </p>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+<div class="text-center section-title">
+  <h1>Medicine</h1>
+  <div>{{ page.description }}</div>
 </div>
+<ul class="list-unstyled">
+  {% for post in site.categories['med'] %}
+  <li class="post-entry">
+    <div class="text-center post-header">
+      <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <em class="post-info">{{ post.date | date: "%-d %B %Y" }}</em>
+    </div>
+    <p class="post-description">
+    {{ post.description }}
+    </p>
+  </li>
+  {% endfor %}
+</ul>
