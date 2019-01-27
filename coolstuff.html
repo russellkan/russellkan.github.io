@@ -1,6 +1,6 @@
 ---
 title: "interesting articles"
-description: "hmm"
+description: "external links in case this site was too boring"
 layout: "basic_index"
 ---
 <div class="text-center section-title">
@@ -13,7 +13,7 @@ layout: "basic_index"
       {% for child in link.children %}
         <li class="post-entry">
           <div class="text-center post-header">
-            <h1 class="post-title"><a href="{{ child.href }}">{{ child.title }}</a></h1>
+            <h1 class="post-title"><a href="{{ child.href }}" target="_blank" rel="noopener noreferrer">{{ child.title }}</a></h1>
           </div>
         </li>
       {% endfor %}
