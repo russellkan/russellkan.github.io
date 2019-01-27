@@ -6,7 +6,7 @@
   href: "/med"
 - title: "Music"
   href: "/music"
-- title: "Interesting Articles"
+- title: "Cool Stuff"
   href: "/coolstuff"
   children:
   - title: "Juggalos Defeat Facial Recognition"
