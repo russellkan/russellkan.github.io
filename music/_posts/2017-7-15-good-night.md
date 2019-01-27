@@ -1,6 +1,6 @@
 ---
 title: Goodbye to the Underground
-artist: SiIvaGunner
+artist: GilvaSunner
 site: Bandcamp
 source-url: https://gilvasunner.bandcamp.com/track/goodbye-to-the-underground-2
 album: 4136150790
