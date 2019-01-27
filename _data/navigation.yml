@@ -6,12 +6,14 @@
   href: "/med"
 - title: "Music"
   href: "/music"
-- title: "Resume"
-  href: "/resume"
 - title: "Interesting Articles"
   href: "/coolstuff"
   children:
   - title: "Juggalos Defeat Facial Recognition"
     href: "https://theoutline.com/post/5172/juggalo-juggalette-facepaint-makeup-hack-beat-facial-recognition-technology?zd=3&zi=fgvt7txu"
+  - title: "Invisible Gorillas in CT Scans"
+    href: http://search.bwh.harvard.edu/new/pubs/DrewVoWolfe13.pdf
+- title: "Resume"
+  href: "/resume"
 - title: "Contact"
   href: "/contact"
