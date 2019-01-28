@@ -1,8 +1,24 @@
 ---
 layout: basic
+pagination: 
+  enabled: true
 ---
 <div class="container">
   <div class="content-area">
     {{ content }}
+    {% if paginator.total_pages > 1 %}
+    <div class="pager post-entry">
+        {% if paginator.previous_page %}
+        <span class="previous" style="float: left;">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        </span>
+        {% endif %}
+        {% if paginator.next_page %}
+        <span class="next" style="float: right;">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        </span>
+        {% endif %}
+    </ul>
+    {% endif %}
   </div>
 </div>

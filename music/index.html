@@ -2,13 +2,16 @@
 title: "sick jamz"
 description: "some BODY once told me"
 layout: "basic_index"
+pagination:
+  enabled: true
+  category: music
 ---
 <div class="text-center section-title">
   <h1>Music</h1>
   <div>{{ page.description }}</div>
 </div>
 <ul class="list-unstyled">
-  {% for post in site.categories['music'] %}
+  {% for post in paginator.posts %}
   <li class="post-entry">
     <div class="text-center post-header">
       <h1 class="post-title"><a href="{{ post.source-url }}">{{ post.title }}</a></h1>

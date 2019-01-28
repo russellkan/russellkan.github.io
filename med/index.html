@@ -2,13 +2,16 @@
 title: "basically webmd"
 description: "i'm the illest"
 layout: "basic_index"
+pagination:
+  enabled: true
+  category: med
 ---
 <div class="text-center section-title">
   <h1>Medicine</h1>
   <div>{{ page.description }}</div>
 </div>
 <ul class="list-unstyled">
-  {% for post in site.categories['med'] %}
+  {% for post in paginator.posts %}
   <li class="post-entry">
     <div class="text-center post-header">
       <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>

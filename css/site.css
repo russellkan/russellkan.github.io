@@ -4615,6 +4615,9 @@ footer {
   background-color: black;
   color: white;
 }
+.background-black a {
+  color: white;
+}
 .skill-name {
   font-size: 20px;
 }
@@ -4754,4 +4757,8 @@ body * {
 }
 .post-content h4 {
   font-size: 2rem;
+}
+.pager {
+  padding: 10px 20px;
+  margin-top: -2rem;
 }
