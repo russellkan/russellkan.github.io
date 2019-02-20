@@ -1124,10 +1124,7 @@ textarea {
 }
 
 input[type="submit"], button {
-  border: none;
-  border-radius: 0;
   cursor: pointer;
-  padding: 0
 }
 
 ::-webkit-input-placeholder {
@@ -2338,7 +2335,7 @@ body.menu-open {
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
 }
 
-.btn, input[type="submit"], button {
+.btn, input[type="submit"], input[type="reset"] button {
   background-color: #161616;
   color: #fff
 }
@@ -5356,5 +5353,23 @@ body * {
   }
   .pager {
     margin-top: 0;
+  }
+}
+
+.survey {
+  form {
+    text-align: -webkit-center;
+  }
+  input, select, textarea {
+    background: #161616;
+  }
+  th, td {
+    padding: 5px 20px;
+  }
+  .nested-table {
+    margin: 0px;
+    th, td {
+      padding: 0px 5px;
+    }
   }
 }

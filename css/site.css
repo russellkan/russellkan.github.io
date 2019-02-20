@@ -1076,10 +1076,7 @@ textarea {
 }
 input[type="submit"],
 button {
-  border: none;
-  border-radius: 0;
   cursor: pointer;
-  padding: 0;
 }
 ::-webkit-input-placeholder {
   color: #161616;
@@ -2143,7 +2140,7 @@ button {
 }
 .btn,
 input[type="submit"],
-button {
+input[type="reset"] button {
   background-color: #161616;
   color: #fff;
 }
@@ -4771,4 +4768,23 @@ body * {
   .pager {
     margin-top: 0;
   }
+}
+.survey form {
+  text-align: -webkit-center;
+}
+.survey input,
+.survey select,
+.survey textarea {
+  background: #161616;
+}
+.survey th,
+.survey td {
+  padding: 5px 20px;
+}
+.survey .nested-table {
+  margin: 0px;
+}
+.survey .nested-table th,
+.survey .nested-table td {
+  padding: 0px 5px;
 }
