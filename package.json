@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "See makefile for how to setup dev environment and how to run a testserver.",
   "main": "index.js",
-  "dependencies": {
-    "clean-css": "^4.2.1",
-    "less": "^3.9.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.3.7",
+    "clean-css": "^4.2.1",
+    "less": "^3.9.0",
     "postcss-cli": "^6.1.2"
   },
   "scripts": {
