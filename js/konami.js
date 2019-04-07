@@ -35,7 +35,6 @@ document.addEventListener('keydown', function(e) {
   } else {
     konamiCodePosition = 0;
   }
-  console.log(key);
 });
 
 function activateCheats() {

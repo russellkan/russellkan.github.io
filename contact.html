@@ -1,0 +1,46 @@
+---
+title: "Contact Me"
+description: "Slide in my dms."
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <script src="/js/form.js" defer></script>
+  </head>
+
+  <body class="background-black">
+    {% include header.html %}
+    <main>
+      <div class="container contact-form">
+        <div class="text-center">
+          <br>
+          <br>
+          <h1>Contact Me</h1>
+          <p>
+            slide in my dms
+          </p>
+        </div>
+        <form action="https://jumprock.co/mail/txrjk96utexas" method="POST" onsubmit="gaFormSent()">
+          <div class='form-field'>
+            <label for="name">Name</label>
+            <input required type="text" id="name" name="name" placeholder="Name">
+          </div>
+          <div class='form-field'>
+            <label for="email">Email</label>
+            <input required type="email" id="email" name="email" placeholder="Email">
+          </div>
+          <div class='form-field'>
+            <label for="message">Message</label>
+            <textarea required id="message" name="message" placeholder="Suh dude?"></textarea>
+          </div>
+          <div class='form-field'>
+            <input class="btn btn-default btn-lg" type="submit" value="Send">
+          </div>
+          <input type="hidden" name="after" value="{{ site.url }}/thanks">
+        </form>
+      </div>
+      {% include footer.html %}
+    </main>
+  </body>
+</html>
