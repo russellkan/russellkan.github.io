@@ -18,10 +18,10 @@ pagination:
       <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
       <em class="post-info">{{ post.date | date: "%-d %B %Y" }}</em>
     </div>
-    <div class="post-content hide-desktop">
+    <div class="post-content preview hide-desktop">
       {{ post.content | truncatewords:50 }}
     </div>
-    <div class="post-content hide-mobile">
+    <div class="post-content preview hide-mobile">
       {{ post.content }}
     </div>
   </li>
