@@ -1176,7 +1176,7 @@ h2 {
 h3 {
   font-size: 1.5625rem;
   line-height: 1.25;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   padding-top: 1.5rem;
 }
 @media all and (min-width: 40em) {
@@ -1202,7 +1202,7 @@ h3 {
 h4 {
   font-size: 1.25rem;
   line-height: 1.25;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   padding-top: 1.5rem;
 }
 @media all and (min-width: 40em) {
@@ -1228,7 +1228,7 @@ h4 {
 h5 {
   font-size: 1rem;
   line-height: 1.25;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   padding-top: 1.5rem;
 }
 @media all and (min-width: 40em) {
@@ -1296,7 +1296,7 @@ p {
   }
 }
 .post-content .content-title-wrap p {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1306,14 +1306,14 @@ p {
   padding: 8px 12px;
 }
 .sub-text {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
 .sub-header {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1621,50 +1621,50 @@ img.lazy.scroll-watch-in-view {
   display: block;
 }
 .grid-full-width {
-  width: calc(40%);
+  width: calc(100% - 60px);
   float: left;
   margin-left: 30px;
 }
 @media only screen and (min-width: 48em) {
   .grid-full-width {
-    width: calc(90%);
+    width: calc(100% - 10%);
     float: left;
     margin-left: 5%;
   }
 }
 .grid-half-width {
-  width: calc(40%);
+  width: calc(100% - 60px);
   float: left;
   margin-left: 30px;
 }
 @media only screen and (min-width: 48em) {
   .grid-half-width {
-    width: calc(42.5%);
+    width: calc(50% - 7.5%);
     float: left;
     margin-left: 5%;
   }
 }
 .grid-thirds-width {
-  width: calc(40%);
+  width: calc(100% - 60px);
   float: left;
   margin-left: 30px;
 }
 @media only screen and (min-width: 62em) {
   .grid-thirds-width {
-    width: calc(26.66666667%);
+    width: calc(33.33333333% - 6.66666667%);
     float: left;
     margin-left: 5%;
   }
 }
 @media only screen and (min-width: 48em) {
   .push-half {
-    left: calc(47.5%);
+    left: calc(50% - 7.5% + 5%);
     position: relative;
   }
 }
 @media only screen and (min-width: 48em) {
   .pull-half {
-    left: calc(-47.5%);
+    left: calc(-50% - 2.5% + 5%);
     position: relative;
   }
 }
@@ -1820,7 +1820,7 @@ body.menu-open {
 }
 @media (min-width: 40em) {
   .main-nav-menu li a {
-    font-size: .8em;
+    font-size: 0.8em;
     font-weight: 400;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -2108,7 +2108,7 @@ body.menu-open {
   left: 0;
   height: 80px;
   width: 200px;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -2298,7 +2298,7 @@ button.white:hover {
   }
 }
 .hero-slider .slide .hero-lockup .section-number {
-  font-size: 3.0517578125rem;
+  font-size: 3.05175781rem;
   line-height: 1.125;
   border-bottom: 2px solid #fff;
   font-weight: 700;
@@ -2414,7 +2414,7 @@ button.white:hover {
 .hero-nav ul a {
   height: 100%;
   width: 100%;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -2520,7 +2520,7 @@ button.white:hover {
   display: block;
 }
 .categories-nav .cat-item {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -2609,7 +2609,7 @@ button.white:hover {
   }
 }
 .related-post-meta .details {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -2900,7 +2900,7 @@ button.white:hover {
   display: block;
 }
 .about-excerpt .quick-links a {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -2972,7 +2972,7 @@ button.white:hover {
   text-decoration: none;
 }
 .definition dl dt {
-  font-size: 3.0517578125rem;
+  font-size: 3.05175781rem;
   line-height: 1.125;
   margin-bottom: 1.5rem;
   overflow-y: hidden;
@@ -3013,7 +3013,7 @@ button.white:hover {
 .definition dl dd {
   margin: 0;
   opacity: 0;
-  padding: .75rem 0;
+  padding: 0.75rem 0;
   text-indent: -18px;
 }
 @media (min-width: 768px) {
@@ -3192,7 +3192,7 @@ button.white:hover {
   z-index: 1;
 }
 .profile-item .title {
-  font-size: .64em;
+  font-size: 0.64em;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -3349,7 +3349,7 @@ button.white:hover {
   }
 }
 .project-meta .details {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -3482,10 +3482,10 @@ button.white:hover {
   }
 }
 .post-meta {
-  font-size: .64em;
+  font-size: 0.64em;
   font-weight: 700;
   letter-spacing: 3px;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   text-transform: uppercase;
 }
 .post-meta .category {
@@ -3560,7 +3560,7 @@ button.white:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -3692,7 +3692,7 @@ button.white:hover {
   vertical-align: middle;
 }
 .sharing > span {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -3963,11 +3963,11 @@ button.white:hover {
   }
 }
 .start-project span {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  padding-bottom: .375rem;
+  padding-bottom: 0.375rem;
   position: relative;
 }
 .start-project span:after {
@@ -4017,7 +4017,7 @@ button.white:hover {
   }
 }
 .contact-column a {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -4039,7 +4039,7 @@ button.white:hover {
   display: block;
 }
 .locations .city {
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -4146,7 +4146,7 @@ button.white:hover {
   text-align: center;
 }
 .shrug-emoji {
-  font-size: 3.0517578125em;
+  font-size: 3.05175781em;
   margin-bottom: 3rem;
 }
 /*# sourceMappingURL=styles.css.map */
@@ -4497,10 +4497,10 @@ footer {
 }
 .fa-caret-right.active {
   transform: rotate(90deg);
-  transition: transform .3s linear;
+  transition: transform 0.3s linear;
 }
 .fa-caret-right:not(.active) {
-  transition: transform .3s linear;
+  transition: transform 0.3s linear;
 }
 @media (min-width: 768px) {
   ul.nav li:hover > ul.dropdown-custom {
@@ -4519,7 +4519,7 @@ footer {
   padding-right: 20px;
   opacity: 0;
   visibility: hidden;
-  transition: .25s .5s;
+  transition: 0.25s 0.5s;
 }
 .dropdown-custom li {
   float: right;
